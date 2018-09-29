@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>POC_OGE</title>
+
+		<script id="sap-ui-bootstrap"
+			src="../../resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_bluecrystal"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"com.oge.pocPOC_OGE": ""}'>
+		</script>
+		
+		
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script>
+			// sap.ui.getCore().attachInit(function() {
+			// 	new sap.m.Shell({
+			// 		app: new sap.ui.core.ComponentContainer({
+			// 			height : "100%",
+			// 			name : "com.oge.pocPOC_OGE"
+			// 		})
+			// 	}).placeAt("content");
+			// });
+			
+			var app = new sap.m.App({initialPage:"idapp"});
+			var page1 = sap.ui.view({id:"idapp", viewName:"com.oge.pocPOC_OGE.view.App",
+				type:sap.ui.core.mvc.ViewType.XML});
+				app.addPage(page1);
+				app.placeAt("content");
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJpk9T9o437xFydHxYpcIhC1M8xL4ZJzQ&libraries=places"
+			type ="text/javascript">
+		</script>
+		
+		
+	</head>
+<style>
+.myMap {                   
+height: 100%;
+width: 100%  ;
+}
+</style>
+	<body class="sapUiBody" id="content">
+	</body>
+
+</html>

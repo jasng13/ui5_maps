@@ -1,0 +1,28 @@
+<!--<mvc:View controllerName="com.oge.pocPOC_OGE.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"-->
+<!--	displayBlock="true" xmlns="sap.m">-->
+<!--	<App>-->
+<!--		<pages>-->
+<!--			<Page title="{i18n>title}">-->
+<!--				<content></content>-->
+<!--			</Page>-->
+<!--		</pages>-->
+<!--	</App>-->
+<!--</mvc:View>-->
+<core:View height="100%" controllerName="com.oge.pocPOC_OGE.controller.Maps" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:vbm="sap.ui.vbm" xmlns:l="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page id="mainPage" enableScrolling="false" title="GMaps">
+		<VBox fitContainer="true" justifyContent="Center" alignItems="Center">
+			<HBox fitContainer="true" justifyContent="Center" alignItems="Center">
+				<Input id="bntSearch" class="controls"  placeholder="Search Box"/>
+				<Button id="button" text="search" press="onAfterRendering"/>
+				<Button id="Distance" text="Distance" press="onDistancePress"/>
+			</HBox>
+			<HBox fitContainer="true" justifyContent="Center" alignItems="Center">
+				<Input id="FromDis" placeholder="From" visible="false"/>
+				<Input id="ToDis" placeholder="To" visible="false"/>
+				<Button id="Okay" text="Ok" visible="false" press="onOkayPress"/>
+			</HBox>
+			<HBox id="map_canvas" fitContainer="true" justifyContent="Center" alignItems="Center"></HBox>
+		</VBox>
+	</Page>
+</core:View>
